@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FlatList from './flat_list';
 import flats from '../../data/flats';
+import FlatMap from './flat_map';
 
 class App extends Component {
   constructor(props) {
@@ -13,9 +14,11 @@ class App extends Component {
         <div className="left-scene">
           <FlatList flats={flats} />
         </div>
-        <div className="right-scene">MAP GOES HERE</div>
+        <div className="right-scene">
+          <FlatMap />
+        </div>
       </div>
-    )
+    );
   }
 }
 

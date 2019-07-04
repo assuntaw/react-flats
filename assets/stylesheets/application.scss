@@ -18,7 +18,6 @@ body {
 
 .left-scene {
   flex: 0 0 60%;
-  border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 200px;
@@ -26,7 +25,22 @@ body {
   grid-column-gap: 5px;
 }
 
+.flat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  padding: 10px;
+}
+
 .right-scene {
   flex: 0 0 40%;
   border: 1px solid black;
+}
+
+.marker {
+  border-radius: 50%;
+  background-color: red;
+  width: 20px;
+  height: 20px;
 }
