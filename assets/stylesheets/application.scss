@@ -31,6 +31,15 @@ body {
   justify-content: space-between;
   background-size: cover;
   padding: 10px;
+  height: 230px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  &.active {
+    border: 10px solid red;
+  }
 }
 
 .right-scene {

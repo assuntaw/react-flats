@@ -24,7 +24,10 @@ class App extends Component {
     return (
       <div className="main-container">
         <div className="left-scene">
-          <FlatList flats={flats} />
+          <FlatList
+            flats={flats}
+            selectFlat={this.selectFlat}
+          />
         </div>
         <div className="right-scene">
           <FlatMap
