@@ -6,6 +6,18 @@ import FlatMap from './flat_map';
 class App extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      selectedFlatLatitude: 0,
+      selectedFlatLongitude: 0
+    };
+  }
+
+  selectFlat = (lat, lng) => {
+    this.setState({
+      selectedFlatLatitude: lat,
+      selectedFlatLongitude: lng
+    });
   }
 
   render() {
@@ -15,7 +27,10 @@ class App extends Component {
           <FlatList flats={flats} />
         </div>
         <div className="right-scene">
-          <FlatMap />
+          <FlatMap
+            latitude={this.state.selectedFlatLatitude}
+            longitude={this.state.selectedFlatLongitude}
+          />
         </div>
       </div>
     );
