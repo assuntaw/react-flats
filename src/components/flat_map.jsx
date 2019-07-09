@@ -16,7 +16,9 @@ class FlatMap extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: '100vh', width: '100%' }}>
+      <div
+        className="map-container"
+      >
         <GoogleMapReact
           bootstrapURLKeys={{ key: config.GOOGLE_API_KEY }}
           defaultCenter={this.props.center}
